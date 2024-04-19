@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Teams>
+
+	<Team>
+
+		<Name>
+			Maroc
+		</Name>
+		<Logo>
+			maroc_logo
+		</Logo>
+		<Participation>
+			14
+		</Participation>
+
+		<Winner>
+			1
+		</Winner>
+
+		<Nickname>
+			Lions de l'Atlas
+		</Nickname>
+		<Photo> equipe_maroc</Photo>
+		 <Description  > L'équipe nationale du Maroc  
+         surnommée les Lions de L'Atlas faisant référence aux 
+         lions qui vivaient dans l'Atlas depuis le xxe siècle, 
+         est une équipe composée des meilleurs joueurs de football 
+         marocains placée sous l'égide de la Fédération royale 
+         marocaine de football.
+    </Description>
+	</Team>
+
+	<Team>
+
+		<Name>
+			Afrique du Sud
+		</Name>
+<Logo>
+			afrique_du_sud_logo
+		</Logo>
+		<Participation>
+			7
+		</Participation>
+
+		<Winner>
+			1
+		</Winner>
+
+		<Nickname>
+			Bafana Bafana
+		</Nickname>
+		<Photo> equipe_afrique_du_sud</Photo>
+
+
+
+	</Team>
+
+	<Team>
+
+		<Name>
+			Angola
+		</Name>
+		<Logo>
+			angola_logo
+		</Logo>
+		<Participation>
+			6
+		</Participation>
+
+		<Winner>
+			0
+		</Winner>
+
+		<Nickname>
+			Palancas Negras
+		</Nickname>
+		<Photo>
+			equipe_angola
+		</Photo>
+	</Team>
+
+	<Team>
+
+		<Name>
+			Cap-Vert
+		</Name>
+		<Logo>cap_vert_logo</Logo>
+	<Participation>0
+	</Participation>
+
+		<Winner>
+			0
+		</Winner>
+
+		<Nickname>
+			Requins Bleus
+		</Nickname>
+		<Photo>
+			equipe_cap_vert
+		</Photo>
+	</Team>
+
+	<Team>
+
+		<Name>
+			Ghana
+		</Name>
+		<Logo>
+			ghana_logo
+		</Logo>
+
+		<Participation>
+			18
+		</Participation>
+
+		<Winner>
+			4
+		</Winner>
+
+		<Nickname>
+			Les Blacks Stars
+		</Nickname>
+		<Photo>
+			equipe_ghana
+		</Photo>
+	</Team>
+
+	<Team>
+
+		<Name>
+			RD Congo
+		</Name>
+		<Logo>
+			rd_congo_logo
+		</Logo>
+		<Participation>
+			15
+		</Participation>
+
+		<Winner>
+			2
+		</Winner>
+
+		<Nickname>
+			Les Léopards
+		</Nickname>
+		<Photo>
+			equipe_rd_congo
+		</Photo>
+	</Team>
+
+	<Team>
+
+		<Name>
+			Mali
+		</Name>
+<Logo>
+			mali_logo
+		</Logo>
+		<Participation>
+			7
+		</Participation>
+
+		<Winner>
+			0
+		</Winner>
+
+		<Nickname>
+			Les Aigles
+		</Nickname>
+		
+		<Photo>equipe_mali</Photo>
+	</Team>
+
+	<Team>
+
+		<Name>
+			Niger
+		</Name>
+		<Logo>
+			niger_logo
+		</Logo>
+		<Participation>
+			1
+		</Participation>
+
+		<Winner>
+			0
+		</Winner>
+
+		<Nickname>
+			Mena
+		</Nickname>
+		<Photo>
+			equipe_niger
+		</Photo>
+	</Team>
+
+	<Team>
+
+		<Name>
+			Zambie
+		</Name>
+		<Logo>
+			zambie_logo
+		</Logo>
+		<Participation>
+			15
+		</Participation>
+
+		<Winner>
+			1
+		</Winner>
+
+		<Nickname>
+			Les Chipolopolos
+		</Nickname>
+		<Photo>
+			equipe_zambie
+		</Photo>
+	</Team>
+
+	<Team>
+
+		<Name>
+			Éthiopie
+		</Name>
+		<Logo>
+			ethiopie_logo
+		</Logo>
+		<Participation>
+			9
+		</Participation>
+
+		<Winner>
+			1
+		</Winner>
+
+		<Nickname>
+			Les Walya
+		</Nickname>
+		<Photo>
+			equipe_ethiopie
+		</Photo>
+	</Team>
+
+	<Team>
+
+		<Name>
+			Nigéria
+		</Name>
+		<Logo>
+			nigeria_logo
+		</Logo>
+		<Participation>
+			16
+		</Participation>
+
+		<Winner>
+			2
+		</Winner>
+
+		<Nickname>
+			Super Aigles
+		</Nickname>
+		<Photo>equipe_nigeria</Photo>
+	</Team>
+
+	<Team>
+
+		<Name>
+			Burkina Faso
+		</Name>
+		<Logo>
+			burkina_faso_logo
+		</Logo>
+		<Participation>
+			8
+		</Participation>
+
+		<Winner>
+			0
+		</Winner>
+
+		<Nickname>
+			Les Étalons
+		</Nickname>
+		<Photo>
+			equipe_burkina_faso
+		</Photo>
+	</Team>
+
+	<Team>
+
+		<Name>
+			Côte d'Ivoire
+		</Name>
+
+		<Participation>
+			19
+		</Participation>
+
+		<Winner>
+			1
+		</Winner>
+
+		<Nickname>
+			Les Éléphants
+		</Nickname>
+		<Photo>
+			equipe_cote_d_ivoire
+		</Photo>
+		<Logo>cote_d_ivoire_logo</Logo>
+	</Team>
+
+	<Team>
+
+		<Name>
+			Algérie
+		</Name>
+
+		<Participation>
+			15
+		</Participation>
+
+		<Winner>
+			1
+		</Winner>
+
+		<Nickname>
+			Les Fennecs
+		</Nickname>
+		<Logo>algerie_logo</Logo>
+		<Photo>equipe_algerie</Photo>
+	</Team>
+
+	<Team>
+
+		<Name>
+			Tunisie
+		</Name>
+		<Logo>
+			tunisie_logo
+		</Logo>
+		<Participation>
+			15
+		</Participation>
+
+		<Winner>
+			1
+		</Winner>
+
+		<Nickname>
+			Aigles de Carthage
+		</Nickname>
+		<Photo>
+			equipe_tunisie
+		</Photo>
+	</Team>
+
+	<Team>
+
+		<Name>
+			Togo
+		</Name>
+		<Logo>
+			togo_logo
+		</Logo>
+		<Participation>
+			7
+		</Participation>
+
+		<Winner>
+			0
+		</Winner>
+
+		<Nickname>
+			Les Éperviers
+		</Nickname>
+		<Photo>
+			equipe_togo
+		</Photo>
+	</Team>
+
+</Teams>
