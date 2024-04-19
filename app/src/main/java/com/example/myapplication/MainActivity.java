@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.xml.parsers.SAXParser;
@@ -53,64 +54,23 @@ public class MainActivity extends ListActivity implements OnItemClickListener {
 
 
 	private List<Team> getTeams() {
-		List<Team> teams = null  ; 
+		List<Team> teams = null ;
 		AssetManager assetManager = getBaseContext().getAssets();
 		try {
 			InputStream is = assetManager.open("teams_infos.xml");
 			SAXParserFactory spf = SAXParserFactory.newInstance();
 			SAXParser sp = spf.newSAXParser();
 			XMLReader xr = sp.getXMLReader();
-
 			TeamXMLHandler myXMLHandler = new TeamXMLHandler(this);
 			xr.setContentHandler(myXMLHandler);
 			InputSource inStream = new InputSource(is);
 			xr.parse(inStream);
 			teams = myXMLHandler.getCartList();
 			is.close();
-
-			teams.add(new Team("Maroc", "lion d'atlass", R.drawable.maroc_logo, R.drawable.equipe_maroc, 14, 1, "ici la description"));
-			teams.add(new Team("Maroc", "lion d'atlass", R.drawable.maroc_logo, R.drawable.equipe_maroc, 14, 1, "ici la description"));
-			teams.add(new Team("Maroc", "lion d'atlass", R.drawable.maroc_logo, R.drawable.equipe_maroc, 14, 1, "ici la description"));
-			teams.add(new Team("Maroc", "lion d'atlass", R.drawable.maroc_logo, R.drawable.equipe_maroc, 14, 1, "ici la description"));
-			teams.add(new Team("Maroc", "lion d'atlass", R.drawable.maroc_logo, R.drawable.equipe_maroc, 14, 1, "ici la description"));
-			teams.add(new Team("Maroc", "lion d'atlass", R.drawable.maroc_logo, R.drawable.equipe_maroc, 14, 1, "ici la description"));
-			teams.add(new Team("Maroc", "lion d'atlass", R.drawable.maroc_logo, R.drawable.equipe_maroc, 14, 1, "ici la description"));
-			teams.add(new Team("Maroc", "lion d'atlass", R.drawable.maroc_logo, R.drawable.equipe_maroc, 14, 1, "ici la description"));
-			teams.add(new Team("Maroc", "lion d'atlass", R.drawable.maroc_logo, R.drawable.equipe_maroc, 14, 1, "ici la description"));
-			teams.add(new Team("Maroc", "lion d'atlass", R.drawable.maroc_logo, R.drawable.equipe_maroc, 14, 1, "ici la description"));
-			teams.add(new Team("Maroc", "lion d'atlass", R.drawable.maroc_logo, R.drawable.equipe_maroc, 14, 1, "ici la description"));
-			teams.add(new Team("Maroc", "lion d'atlass", R.drawable.maroc_logo, R.drawable.equipe_maroc, 14, 1, "ici la description"));
-			teams.add(new Team("Maroc", "lion d'atlass", R.drawable.maroc_logo, R.drawable.equipe_maroc, 14, 1, "ici la description"));
-			teams.add(new Team("Maroc", "lion d'atlass", R.drawable.maroc_logo, R.drawable.equipe_maroc, 14, 1, "ici la description"));
-			teams.add(new Team("Maroc", "lion d'atlass", R.drawable.maroc_logo, R.drawable.equipe_maroc, 14, 1, "ici la description"));
-			teams.add(new Team("Maroc", "lion d'atlass", R.drawable.maroc_logo, R.drawable.equipe_maroc, 14, 1, "ici la description"));
-			teams.add(new Team("Maroc", "lion d'atlass", R.drawable.maroc_logo, R.drawable.equipe_maroc, 14, 1, "ici la description"));
-			teams.add(new Team("Maroc", "lion d'atlass", R.drawable.maroc_logo, R.drawable.equipe_maroc, 14, 1, "ici la description"));
-			teams.add(new Team("Maroc", "lion d'atlass", R.drawable.maroc_logo, R.drawable.equipe_maroc, 14, 1, "ici la description"));
-			teams.add(new Team("Maroc", "lion d'atlass", R.drawable.maroc_logo, R.drawable.equipe_maroc, 14, 1, "ici la description"));
-			teams.add(new Team("Maroc", "lion d'atlass", R.drawable.maroc_logo, R.drawable.equipe_maroc, 14, 1, "ici la description"));
-			teams.add(new Team("Maroc", "lion d'atlass", R.drawable.maroc_logo, R.drawable.equipe_maroc, 14, 1, "ici la description"));
-			teams.add(new Team("Maroc", "lion d'atlass", R.drawable.maroc_logo, R.drawable.equipe_maroc, 14, 1, "ici la description"));
-			teams.add(new Team("Maroc", "lion d'atlass", R.drawable.maroc_logo, R.drawable.equipe_maroc, 14, 1, "ici la description"));
-			teams.add(new Team("Maroc", "lion d'atlass", R.drawable.maroc_logo, R.drawable.equipe_maroc, 14, 1, "ici la description"));
-			teams.add(new Team("Maroc", "lion d'atlass", R.drawable.maroc_logo, R.drawable.equipe_maroc, 14, 1, "ici la description"));
-			teams.add(new Team("Maroc", "lion d'atlass", R.drawable.maroc_logo, R.drawable.equipe_maroc, 14, 1, "ici la description"));
-			teams.add(new Team("Maroc", "lion d'atlass", R.drawable.maroc_logo, R.drawable.equipe_maroc, 14, 1, "ici la description"));
-			teams.add(new Team("Maroc", "lion d'atlass", R.drawable.maroc_logo, R.drawable.equipe_maroc, 14, 1, "ici la description"));
-			teams.add(new Team("Maroc", "lion d'atlass", R.drawable.maroc_logo, R.drawable.equipe_maroc, 14, 1, "ici la description"));
-			teams.add(new Team("Maroc", "lion d'atlass", R.drawable.maroc_logo, R.drawable.equipe_maroc, 14, 1, "ici la description"));
-
-
 		} catch (Exception e) {
-			Log.getStackTraceString(e); 
+			Log.getStackTraceString(e);
 		}
 		return teams;
-		 
-
-
-
-
-	
 	}
 
 

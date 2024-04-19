@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import java.util.ArrayList;
 
+import android.annotation.SuppressLint;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
@@ -13,7 +14,6 @@ public class TeamXMLHandler extends DefaultHandler {
 
 	boolean currentElement = false;
 	String currentValue = "";
-
 	ArrayList<Team> teamList;
 	private Team team;
 	private Context context;
@@ -34,7 +34,7 @@ public class TeamXMLHandler extends DefaultHandler {
 
 		if (qName.equals("Teams")){
 			teamList = new ArrayList<Team>();
-		} 
+		}
 		else if (qName.equals("Team")) {
 			team = new Team();
 		}
@@ -43,46 +43,41 @@ public class TeamXMLHandler extends DefaultHandler {
 
 	public void endElement(String uri, String localName, String qName)
 			throws SAXException {
-
 		currentElement = false;
-		 
-	 
 		if (qName.equalsIgnoreCase("Name")){
 			team.setName(currentValue.trim());
 		}
 		else if (qName.equalsIgnoreCase("Participation"))
-			team.setParticipation(Integer.parseInt(currentValue.trim()));
+			team.setParticipation(Integer.parseInt(
+					currentValue.trim()));
 		else if (qName.equalsIgnoreCase("Winner"))
 			team.setWinner(Integer.parseInt(currentValue.trim()));
 		else if (qName.equalsIgnoreCase("Nickname"))
 			team.setNickname(currentValue.trim());
 		else if (qName.equalsIgnoreCase("Logo")){
-			int drawableResourceId = context.getResources().getIdentifier(currentValue.trim(), 
-					"drawable", context.getPackageName());
-			team.setIcon(drawableResourceId); 
-		} 
+			@SuppressLint("DiscouragedApi") int drawableResourceId = context.getResources()
+					.getIdentifier(currentValue.trim(),
+							"drawable", context.getPackageName());
+			team.setIcon(drawableResourceId);
+		}
 		else if (qName.equalsIgnoreCase("Photo")){
-			int drawableResourceId = context.getResources().getIdentifier(currentValue.trim(), 
-					"drawable", context.getPackageName());
-			team.setPhoto(drawableResourceId); 
+			@SuppressLint("DiscouragedApi") int drawableResourceId = context.getResources()
+					.getIdentifier(currentValue.trim(),
+							"drawable", context.getPackageName());
+			team.setPhoto(drawableResourceId);
 		}
 		else if (qName.equalsIgnoreCase("Description")){
 			team.setDescriptionId(currentValue.trim());
 		}
-		
 		else if (qName.equalsIgnoreCase("Team"))
 			teamList.add(team);
-		 
 		currentValue = "";
 	}
-
 	public void characters(char[] ch, int start, int length)
 			throws SAXException {
-
 		if (currentElement) {
-			currentValue = currentValue + new String(ch, start, length);
+			currentValue = currentValue +
+					new String(ch, start, length);
 		}
-
 	}
-
 }
