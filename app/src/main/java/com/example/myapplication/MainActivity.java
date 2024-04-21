@@ -45,7 +45,7 @@ public class MainActivity extends ListActivity implements OnItemClickListener {
 		intent.putExtra("Team", team);
 		startActivity(intent);
 
-				Toast.makeText(this, "Vous avez cliqu� sur l'�quipe : " + team.getName(),
+				Toast.makeText(this, "Vous avez cliqu� sur l'�quipe  : " + team.getName(),
 						 Toast.LENGTH_LONG).show();
 
 
